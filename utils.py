@@ -6,8 +6,7 @@ CANDIDATES_DATA = "candidates.json"
 def load_candidates(filename: str):
     """`, которая загрузит данные из файла"""
     with open(filename, encoding="utf-8") as file:
-        candidates = json.load(file)
-    return candidates
+        return json.load(file)
 
 
 def get_all():
